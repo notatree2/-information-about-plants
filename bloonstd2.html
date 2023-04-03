@@ -8,17 +8,17 @@
 </head>
 <body>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("ruffle");
-        player.id = "player";
-        player.style.width = "100%";
-        player.style.height = "100%";
-        container.appendChild(player);
-        player.load("bloonstd2.swf");
-      });
-    </script>
+    <script>  window.RufflePlayer = window.RufflePlayer || {};
+          window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("ruffle");
+            player.id = "player";
+            player.style.width = "100%";
+            player.style.height = "100%";
+            container.appendChild(player);
+            player.load("bloonstd2.swf");
+          });
+        </script>
 </body>
 </html>
